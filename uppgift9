@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class ArrayListJohn {
+
+
+        public static void main(String args[]){
+            ArrayList<String> list = new ArrayList<String>();
+
+            list.add("");
+
+
+            do{ System.out.print("Skriv in något:"); list.add(Main.getString());
+
+            }
+
+            while (list.get(list.size()-1).length() > list.get(list.size()-2).length());
+
+
+            System.out.println(list);
+        }
+    }
