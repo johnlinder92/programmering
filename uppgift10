@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class uppgift10 {
+    public static void main(String[] args) {
+
+       bubbleSort();
+
+    }
+    public static ArrayList<Integer> bubbleSort(){
+
+        ArrayList<Integer> list = new ArrayList<>();
+do{ System.out.print("Skriv in ett heltal:");
+        list.add(Main.getInt());}
+      while(list.size() < 5);
+
+        System.out.println("Du skrev in:"+ list);
+
+            for(int i=0; i<(list.size()-1); i++)
+            for(int j =0; j<(list.size()-1); j++)
+                if( list.get(j) > list.get(j+1)){
+                   Collections.swap(list,j,j+1);
+                }
+
+        System.out.println("Sorterat med bubblesort:" + list);
+           return list;
+
+          }
+}
